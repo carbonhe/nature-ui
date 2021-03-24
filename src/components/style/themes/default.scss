@@ -1,0 +1,48 @@
+@import "../core/index";
+
+$theme: default;
+
+$white: white;
+
+$text-color: nt-var(text-color, $grey);
+$border-color: nt-var(border-color, $grey-4);
+$border-radius: nt-var(border-radius, 2px);
+$border-width: nt-var(border-width, 1px);
+$font-weight: nt-var(font-weight, 400);
+
+$primary-color: nt-var(primary-color, $blue);
+$primary-color-light: nt-var(primary-color-light, $blue-3);
+$primary-color-lighter: nt-var(primary-color-lighter, $blue-1);
+$primary-color-deep: nt-var(primary-color-deep, $blue-8);
+$primary-color-deeper: nt-var(primary-color-deeper, $blue-10);
+
+$transition: all .2s ease-in-out;
+
+
+// button
+$btn-border-radius: nt-var(btn-border-radius, $border-radius);
+$btn-border-width: nt-var(btn-border-width, $border-width);
+
+$btn-round-radius: nt-var(btn-round-radius, 24px);
+
+$btn-success-color: nt-var(btn-success-color, $green);
+$btn-success-bg: nt-var(btn-success-bg, $green-1);
+$btn-success-border: nt-var(btn-success-border, $green-4);
+$btn-success-disable: nt-var(btn-success-disable, $green-2);
+
+$btn-warning-color: nt-var(btn-warning-color, $orange);
+$btn-warning-bg: nt-var(btn-warning-bg, $orange-1);
+$btn-warning-border: nt-var(btn-warning-border, $orange-4);
+$btn-warning-disabled: nt-var(btn-warning-disabled, $orange-2);
+
+$btn-danger-color: nt-var(btn-danger-color, $red);
+$btn-danger-bg: nt-var(btn-danger-bg, $red-1);
+$btn-danger-border: nt-var(btn-danger-border, $red-4);
+$btn-danger-disabled: nt-var(btn-danger-disabled, $red-2);
+
+$btn-info-color: nt-var(btn-info-color, $grey);
+$btn-info-bg: nt-var(btn-info-bg, $grey-1);
+$btn-info-border: nt-var(btn-info-border, $grey-4);
+$btn-info-disabled: nt-var(btn-info-disabled, $grey-4);
+
+

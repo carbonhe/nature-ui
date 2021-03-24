@@ -1,0 +1,43 @@
+@mixin btn {
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-weight: $font-weight;
+  transition: $transition;
+  border: $btn-border-width solid transparent;
+  border-radius: $btn-border-radius;
+  outline: none;
+}
+
+@mixin btn-color($color,$border,$background) {
+  color: $color;
+  border-color: $border;
+  background-color: $background;
+}
+
+@mixin btn-size($size,$padding) {
+  &-#{$size} {
+    padding: $padding;
+  }
+}
+
+@mixin btn-type($type,$color,$border,$background,$hover-color,$hover-border,$hover-bg,$disabled-color,$disabled-border,$disabled-bg) {
+  &-#{$type} {
+    @include btn-color($color, $border, $background);
+
+    &:hover, &:focus {
+      @include btn-color($hover-color, $hover-border, $hover-bg);
+    }
+
+    &:active {
+      transform: scale(0.95, 0.95);
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      @include btn-color($disabled-color, $disabled-border, $disabled-bg);
+    }
+  }
+
+
+}

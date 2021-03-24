@@ -1,0 +1,14 @@
+$nt-prefix: nt;
+
+@function nt-var-name($name) {
+  @return --#{$nt-prefix}-#{$name}
+}
+
+@function nt-var($name,$default: null) {
+  @if ($default == null) {
+    @return var(nt-var-name($name))
+  } @else {
+    @return var(nt-var-name($name), $default)
+  }
+}
+

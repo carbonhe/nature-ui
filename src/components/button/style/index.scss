@@ -1,0 +1,50 @@
+@import "../../style/index";
+@import "./mixin";
+
+
+$btn-prefix: #{$nt-prefix}-button;
+
+.#{$btn-prefix} {
+
+  @include btn;
+
+  @include btn-type(default,
+          $text-color, $border-color, $white,
+          $primary-color, $primary-color-light, $white,
+          $grey-5, $grey-4, $white);
+
+  @include btn-type(primary,
+          $primary-color, $primary-color-light, $primary-color-lighter,
+          $white, transparent, $primary-color,
+          $white, transparent, $primary-color-light);
+
+  @include btn-type(success,
+          $btn-success-color, $btn-success-border, $btn-success-bg,
+          $white, transparent, $btn-success-color,
+          $white, transparent, $btn-success-disable);
+
+  @include btn-type(warning,
+          $btn-warning-color, $btn-warning-border, $btn-warning-bg,
+          $white, transparent, $btn-warning-color,
+          $white, transparent, $btn-warning-disabled);
+
+  @include btn-type(danger,
+          $btn-danger-color, $btn-danger-border, $btn-danger-bg,
+          $white, transparent, $btn-danger-color,
+          $white, transparent, $btn-danger-disabled);
+
+  @include btn-type(info,
+          $btn-info-color, $btn-info-border, $btn-info-bg,
+          $white, transparent, $btn-info-color,
+          $white, transparent, $btn-info-disabled);
+
+  @include btn-size(small, 2px 5px);
+  @include btn-size(medium, 4px 10px);
+  @include btn-size(large, 6px 15px);
+
+  &-round {
+    border-radius: $btn-round-radius;
+  }
+
+}
+
